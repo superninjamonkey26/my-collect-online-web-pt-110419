@@ -1,9 +1,9 @@
 def my_collect(array)
   i = 0
   collection = []
- # languages = ["ruby", "javascript", "python", "objective-c"]
-  #students = ["Tim Jones", "Tom Smith", "Sophie Johnson", "Antoin Miller"]
+  while i < array.length
   my_collect(array) do |name|
+    i += 1 
   name.split(" ").first
    # language.upcase
   end
@@ -21,4 +21,17 @@ end
    # i += 1
   #end
   #my_collect
+#end
+
+
+#def my_collect(array)
+ # i = 0
+#  collection = []
+ # languages = ["ruby", "javascript", "python", "objective-c"]
+  #students = ["Tim Jones", "Tom Smith", "Sophie Johnson", "Antoin Miller"]
+ # my_collect(array) do |name|
+#  name.split(" ").first
+   # language.upcase
+ # end
+ # my_collect
 #end
