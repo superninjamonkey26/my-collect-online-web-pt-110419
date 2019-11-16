@@ -2,6 +2,8 @@ def my_collect(array)
   i = 0
   collection = []
   while i < array.length
+  collection << yield(array[i])
+  
   my_collect(array) do |name|
     i += 1
   name.split(" ").first
