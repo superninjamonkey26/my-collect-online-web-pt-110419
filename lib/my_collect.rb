@@ -3,7 +3,7 @@ def my_collect(array)
   collection = []
   while i < array.length
   my_collect(array) do |name|
-    i += 1 
+    i += 1
   name.split(" ").first
    # language.upcase
   end
