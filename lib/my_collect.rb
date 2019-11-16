@@ -3,9 +3,9 @@ def my_collect(array)
   collection = []
   while i < array.length
   collection << yield(array[i])
+  i += 1
   
   my_collect(array) do |name|
-    i += 1
   name.split(" ").first
    # language.upcase
   end
